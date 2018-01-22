@@ -1,0 +1,22 @@
+// Return a unitless number
+@function strip-units($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / (($number * 0) + 1);
+  }
+
+  @return $number;
+}
+
+// Return a size in rems
+@function rem($size) {
+  @if (unitless($size)) {
+    $size: $size * 1px;
+  }
+  @return ($size / 16px) * 1rem;
+}
+
+// Replicate Photoshop spacing values
+@function spacing($spacing) {
+  $value: ($spacing / 1000) * 1em;
+  @return $value;
+}
