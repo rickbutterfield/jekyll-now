@@ -1,6 +1,19 @@
 .c-header {
+  padding: 1rem 0;
+
   .o-container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
+
+  .site-info {
+    
+    a {
+      font-size: rem(24);
+      font-weight: 700;
+      text-decoration: none;
+      color: $font-colour;
+    }
+  }

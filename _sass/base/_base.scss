@@ -6,5 +6,25 @@ body {
   font-size: 1rem;
   font-family: $font-stack;
   line-height: 1.5;
-  color: #212121;
+  color: $font-colour;
+  background-color: $background-colour;
+}
+
+.c-social {
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    display: block;
+    padding: 0 0.5rem;
+
+    img {
+      height: 2rem;
+    }
+  }
 }
