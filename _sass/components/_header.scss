@@ -8,12 +8,20 @@
   }
 }
 
-  .site-info {
-    
+  .site-info {    
     a {
       font-size: rem(24);
       font-weight: 700;
       text-decoration: none;
-      color: $font-colour;
+      color: $text-colour;
     }
   }
+
+  .c-nav {
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: .5rem;
+    }
+  }
+
