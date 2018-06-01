@@ -25,7 +25,9 @@
   @return $number;
 }
 
-// Return a size in rems
+/// Return a size in rems
+/// @access public
+/// @param {Number} $size - unitless px value to convert to rem
 @function rem($size) {
   @if (unitless($size)) {
     $size: $size * 1px;
