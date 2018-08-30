@@ -12,6 +12,7 @@ body {
   font-variant-alternates: styleset("ss01");
   font-variant-ligatures: contextual;
   font-feature-settings: 'ss01', 'calt' 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 .c-social {
