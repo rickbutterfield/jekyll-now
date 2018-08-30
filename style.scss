@@ -1,21 +1,21 @@
 ---
 ---
 
-@import 'tools/mixins';
-@import 'tools/functions';
+@import '01-tools/mixins';
+@import '01-tools/functions';
 
-@import 'settings/variables';
+@import '02-settings/variables';
 
-@import 'generic/normalize';
-@import 'generic/boxsizing';
-@import 'generic/shared';
+@import '03-generic/normalize';
+@import '03-generic/boxsizing';
+@import '03-generic/shared';
 
-@import 'base/base';
-@import 'base/typography';
+@import '04-base/base';
+@import '04-base/typography';
 
-@import 'objects/grid';
+@import '05-objects/grid';
 
-@import 'components/header';
-@import 'components/footer';
-@import 'components/figure';
-@import 'components/posts';
+@import '06-components/header';
+@import '06-components/footer';
+@import '06-components/figure';
+@import '06-components/posts';
