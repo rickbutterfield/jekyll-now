@@ -33,3 +33,33 @@ body {
     }
   }
 }
+
+.c-main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 1rem;
+  width: 100%;
+}
+
+// .c-home {
+//   display: grid;
+//   grid-template-columns: repeat(5, 1fr);
+
+//   .c-figure {
+//     grid-column: span 5;
+
+//     @media (min-width: 50rem) {
+//       grid-column: 3 / span 3;
+//     }
+//   }
+
+//   .c-content {
+//     grid-row: 2;
+//     grid-column: span 5;
+//     @media (min-width: 50rem) {
+//       grid-column: 1 / span 3;
+//     }
+//   }
+// }
