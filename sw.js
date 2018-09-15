@@ -13,6 +13,7 @@ var version = 'v1::';
 */
 var offlineFundamentals = [
   'index.html',
+  '/blog',
   'style.css',
   'site.js'
 ];

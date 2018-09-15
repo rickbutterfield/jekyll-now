@@ -10,10 +10,34 @@
 
   .site-info {    
     a {
+      position: relative;
       font-size: rem(24);
       font-weight: 700;
       text-decoration: none;
       color: $text-colour;
+      border-bottom: 0;
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: calc(100% - 1px);
+        right: 0;
+        bottom: -2px;
+        left: 0;
+        background-color: $brand-colour;
+        z-index: -1;
+        transition: all $transition-default;
+      }
+
+      &:hover,
+      &:focus {
+        &:after {
+          top: 0;
+          right: -2px;
+          bottom: 0;
+          left: -2px;
+        }
+      }
     }
   }
 
@@ -22,6 +46,7 @@
       display: inline-block;
       text-decoration: none;
       padding: .5rem;
+      border-bottom: 0;
     }
   }
 

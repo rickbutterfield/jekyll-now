@@ -1,6 +1,13 @@
 a {
   color: $text-colour;
-  text-decoration-skip: ink;
+  border-bottom: 2px solid $brand-colour;
+  text-decoration: none;
+  transition: border-bottom-width $transition-default;
+
+  &:hover,
+  &:focus {
+    border-bottom-width: 4px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -21,10 +28,6 @@ li {
 .lead {
   font-size: rem(21);
   font-weight: 500;
-}
-
-a {
-  color: tint($text-colour, 20%);
 }
 
 b, strong {

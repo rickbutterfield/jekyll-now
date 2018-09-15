@@ -13,9 +13,12 @@ $font-stack:
   // Emoji fonts
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
+$brand-colour: #fbe26d;
 $text-colour: #212121;
 $muted-colour: tint($text-colour, 40%);
 $light-colour: tint($text-colour, 90%);
 $background-colour: #fafafa;
 
 $max-width: 50rem;
+
+$transition-default: 100ms ease;
