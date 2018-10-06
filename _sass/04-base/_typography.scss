@@ -47,3 +47,22 @@ b, strong {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+blockquote {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  border-left: 4px solid $brand-colour;
+
+  p {
+    font-style: italic;
+
+    @media (min-width: 50em) {
+      font-size: 22px;
+    }
+  }
+
+  footer {
+    color: $muted-colour;
+  }
+}
