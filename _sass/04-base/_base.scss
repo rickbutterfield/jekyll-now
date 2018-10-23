@@ -5,7 +5,7 @@ html {
 body {
   font-size: 1rem;
   font-family: $font-stack;
-  line-height: 1.5;
+  line-height: 1.65;
   letter-spacing: -0.002em;
   color: $text-colour;
   background-color: $background-colour;
@@ -42,24 +42,3 @@ body {
   padding: 1rem;
   width: 100%;
 }
-
-// .c-home {
-//   display: grid;
-//   grid-template-columns: repeat(5, 1fr);
-
-//   .c-figure {
-//     grid-column: span 5;
-
-//     @media (min-width: 50rem) {
-//       grid-column: 3 / span 3;
-//     }
-//   }
-
-//   .c-content {
-//     grid-row: 2;
-//     grid-column: span 5;
-//     @media (min-width: 50rem) {
-//       grid-column: 1 / span 3;
-//     }
-//   }
-// }
