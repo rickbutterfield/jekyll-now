@@ -1,3 +1,14 @@
+:root {
+  --background: #fafafa;
+  --text: #212121;
+  --brand: #fbe26d;
+
+  @media (prefers-color-scheme: dark) {
+    --background: #212121;
+    --text: #fafafa;
+  }
+}
+
 html {
   font-size: 1em;
 }
@@ -7,8 +18,8 @@ body {
   font-family: $font-stack;
   line-height: 1.65;
   letter-spacing: -0.002em;
-  color: $text-colour;
-  background-color: $background-colour;
+  color: var(--text);
+  background-color: var(--background);
   font-variant-alternates: styleset("ss01");
   font-variant-ligatures: contextual;
   font-feature-settings: 'ss01', 'calt' 1;
@@ -28,9 +39,17 @@ body {
     display: block;
     padding: 0 0.5rem;
 
-    img {
+    svg {
       height: 2rem;
+      
+      path {
+        fill: var(--text);
+      }
     }
+  }
+
+  a {
+    border-bottom: 0;
   }
 }
 
