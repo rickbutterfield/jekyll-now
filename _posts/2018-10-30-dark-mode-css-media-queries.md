@@ -33,7 +33,7 @@ body {
 
 I think the results are pretty great! See the video below...
 
-<video controls muted src=
+<video controls muted>
   <source type="video/mp4" src="/assets/videos/blog/2018-10-30/darkmode.mp4">
   <source type="video/webm" src="/assets/videos/blog/2018-10-30/darkmode.webm">
 </video>
