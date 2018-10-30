@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Dark Mode and CSS Media Queries
-# excerpt: 
+excerpt: Dark mode is all the rage these days.
 ---
 
-<p class="lead"><strong>Dark Modes</strong> are all the rage these days.</p>
+<p class="lead">Dark mode is all the rage these days.</p>
 
 Windows has had one for a while, Apple have just released support with macOS Mojave and the latest version of [Safari Technology Preview](https://webkit.org/blog/8475/release-notes-for-safari-technology-preview-68/) now supports adjusting your site's CSS based on whether you've toggled dark mode on.
 
