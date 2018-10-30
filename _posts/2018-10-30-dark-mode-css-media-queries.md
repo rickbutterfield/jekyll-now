@@ -16,6 +16,7 @@ The media query in question is `prefers-color-scheme: light | dark` and is part 
   --text: #212121;
   --brand: #fbe26d;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #212121;
@@ -24,10 +25,8 @@ The media query in question is `prefers-color-scheme: light | dark` and is part 
 }
 
 body {
-  ...
   color: var(--text);
   background-color: var(--background);
-  ...
 }
 ```
 

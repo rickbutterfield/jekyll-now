@@ -1,6 +1,15 @@
 .c-figure {
   margin-right: 0;
   margin-left: 0;
-  overflow: hidden;
-  border-radius: 4px;
+  
+  img {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  figcaption {
+    padding-top: 4px;
+    color: $muted-colour;
+    font-style: italic;
+  }
 }
