@@ -5,7 +5,7 @@ console.log('WORKER: executing.');
 /* A version number is useful when updating the worker logic,
    allowing you to remove outdated cache entries during the update.
 */
-var version = 'v1.0.5';
+var version = 'v1.0.6';
 
 /* These resources will be downloaded and cached by the service worker
    during the installation process. If any resource fails to be downloaded,
@@ -61,7 +61,7 @@ self.addEventListener("fetch", function (event) {
   /* We should only cache GET requests, and deal with the rest of method in the
      client-side, by handling failed POST,PUT,PATCH,etc. requests.
   */
-  if (event.request.method !== 'GET') {
+  if (event.request.method !== 'GET' || event.request.url.startsWith('chrome-extension') || event.request.url.startsWith('data:')) {
     /* If we don't block the event as shown below, then the request will go to
        the network as usual.
     */
