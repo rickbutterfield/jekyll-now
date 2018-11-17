@@ -16,6 +16,7 @@
       text-decoration: none;
       color: var(--text);
       border-bottom: 0;
+      transition: color 200ms ease;
 
       &:after {
         position: absolute;
@@ -31,6 +32,10 @@
 
       &:hover,
       &:focus {
+        @media (prefers-color-scheme: dark) {
+          color: var(--background);
+        }
+
         &:after {
           top: 0;
           right: -2px;
