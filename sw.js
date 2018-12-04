@@ -5,7 +5,7 @@ console.log('WORKER: executing.');
 /* A version number is useful when updating the worker logic,
    allowing you to remove outdated cache entries during the update.
 */
-var version = 'v1.0.6';
+var version = 'v1.1.0';
 
 /* These resources will be downloaded and cached by the service worker
    during the installation process. If any resource fails to be downloaded,
@@ -58,14 +58,25 @@ self.addEventListener("install", function (event) {
 self.addEventListener("fetch", function (event) {
   console.log('WORKER: fetch event in progress.');
 
+  var requestUrl = event.request.url;
   /* We should only cache GET requests, and deal with the rest of method in the
      client-side, by handling failed POST,PUT,PATCH,etc. requests.
   */
-  if (event.request.method !== 'GET' || event.request.url.startsWith('chrome-extension') || event.request.url.startsWith('data:')) {
+  var isGetRequest = event.request.method === 'GET';
+
+  /* Only cache resources that come from the following URLs. We don't want to cache
+     anything from a third party
+  */
+  var isWhitelistedUrl =
+    requestUrl.startsWith('https://rickbutterfield.com') ||
+    requestUrl.startsWith('https://use.typekit.net') ||
+    requestUrl.startsWith('https://cdnjs.cloudflare.com');
+
+  if (!isGetRequest || !isWhitelistedUrl) {
     /* If we don't block the event as shown below, then the request will go to
        the network as usual.
     */
-    console.log('WORKER: fetch event ignored.', event.request.method, event.request.url);
+    console.warn('WORKER: fetch event ignored.', event.request.method, event.request.url);
     return;
   }
   /* Similar to event.waitUntil in that it blocks the fetch event on a promise.
@@ -142,7 +153,7 @@ self.addEventListener("fetch", function (event) {
              - Generate a Response programmaticaly, as shown below, and return that.
           */
 
-          console.log('WORKER: fetch request failed in both cache and network.');
+          console.error('WORKER: fetch request failed in both cache and network.');
 
           /* Here we're creating a response programmatically. The first parameter is the
              response body, and the second one defines the options for the response.
