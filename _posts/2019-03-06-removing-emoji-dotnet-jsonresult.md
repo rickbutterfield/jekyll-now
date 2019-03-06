@@ -14,10 +14,10 @@ The error I was getting looked something like this:
 
 After some digging and Googling I came across a number of ways to remove emojis from a string which seems to have done the trick. The example in my case was trying to load tweets and spit them out as JSON.
 
-```csharp
+```cs
 var description = Regex.Replace(tweet.TextAsHtml, @"\p{Cs}", "");
 ```
 
-The second property of the `Regex.Replace` is the key part&mdash;it's telling the replace to remove invisible code characters, specifically [one half of a surrogate pair in UTF-16 encoding](https://www.regular-expressions.info/unicode.html) in this case.
+The second property of the `Regex.Replace` is the key part&mdash;`@"\p{Cs}"`. This string is telling the replace to remove invisible code characters, specifically [one half of a surrogate pair in UTF-16 encoding](https://www.regular-expressions.info/unicode.html) in this case.
 
 Hope this is helpful for someone!
