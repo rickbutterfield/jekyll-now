@@ -56,6 +56,10 @@ p {
 .lead {
   font-size: rem(22);
   font-weight: 500;
+
+  code {
+    font-size: 20px;
+  }
 }
 
 b, strong {

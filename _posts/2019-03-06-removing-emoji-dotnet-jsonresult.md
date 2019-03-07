@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Removing emoji in a C# .NET JsonResult 
-# excerpt: Dark mode is all the rage these days.
+excerpt: I recently came across an issue at work where a JsonResult couldn't be returned because of emojis within a string
 ---
 
-<p class="lead">I recently came across an issue at work where a `JsonResult` couldn't be returned because of emojis within a string</p>
+<p class="lead">I recently came across an issue at work where a <code>JsonResult</code> couldn't be returned because of emojis within a string.</p>
 
 The error I was getting looked something like this:
 
@@ -14,7 +14,7 @@ The error I was getting looked something like this:
 
 After some digging and Googling I came across a number of ways to remove emojis from a string which seems to have done the trick. The example in my case was trying to load tweets and spit them out as JSON.
 
-```cs
+```dotnet
 var description = Regex.Replace(tweet.TextAsHtml, @"\p{Cs}", "");
 ```
 
