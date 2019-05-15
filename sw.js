@@ -1,10 +1,11 @@
-const version = 'v2.0.0';
+const version = 'v2.0.1';
 
 const offlineFundamentals = [
   'index.html',
   'blog.html',
   'style.css',
   'site.js',
+  '/images/Rick.webp',
   '/images/Rick.jpg'
 ];
 

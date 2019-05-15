@@ -4,7 +4,11 @@ layout: default
 
 <section class="c-home">
   <figure class="c-figure">
-    <img src="/images/Rick.jpg" alt="Rick Butterfield">
+    <picture>
+      <source srcset="/images/Rick.webp" type="image/webp">
+      <source srcset="/images/Rick.jpg" type="image/jpeg">
+      <img src="/images/Rick.jpg" alt="Rick Butterfield">
+    </picture>
   </figure>
 
   <article class="c-content">
