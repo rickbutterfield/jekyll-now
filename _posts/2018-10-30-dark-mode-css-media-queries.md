@@ -38,3 +38,6 @@ I think the results are pretty great! See the video below...
 </video>
 
 You can give it a try yourself if you're using macOS Mojave and the latest Safari Technology Preview, but I don't imagine it will be long until other browser makers bring in developmental support. There's a lot of potential here but as with everything it's worth using in an appropriate, sparing way.
+
+## UPDATE: 21st May 2019
+Dark mode support has now come to Firefox desktop! (v67)
