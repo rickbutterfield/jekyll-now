@@ -41,3 +41,6 @@ You can give it a try yourself if you're using macOS Mojave and the latest Safar
 
 ## UPDATE: 21st May 2019
 Dark mode support has now come to Firefox desktop! (v67)
+
+## UPDATE: 31st July 2019
+Dark mode is now supported in Chrome 76.
