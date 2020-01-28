@@ -7,14 +7,14 @@ excerpt: This past Friday, I got chance to go to Mozilla's View Source Conferenc
 <p class="lead">This past Friday, I got chance to go to Mozilla's <a href="https://viewsourceconf.org">View Source Conference</a>&mdash;thanks to winning a ticket at <a href="https://frontendne.co.uk">Frontend NE</a>!</p>
 
 <figure class="c-figure">
-  <img src="/images/blog/2018-10-27/photo1.jpg" alt="My conference lanyard and a number of Mozilla stickers">
+  <img src="/images/blog/2018-10-27/photo1.jpg" alt="My conference lanyard and a number of Mozilla stickers" loading="lazy">
   <figcaption>My conference lanyard and a number of Mozilla stickers</figcaption>
 </figure>
 
 I travelled down to London on the Thursday and did some touristy things first of all. I visited the Tate Modern for the first time in 9 years(!) and did a bit of shopping too. Then on Friday morning I headed over to [The RSA](https://www.thersa.org/) for the one day, single-track conference.
 
 <figure class="c-figure">
-  <img src="/images/blog/2018-10-27/photo2.jpg" alt="Saron Yitbarek giving a talk at View Source Conference">
+  <img src="/images/blog/2018-10-27/photo2.jpg" alt="Saron Yitbarek giving a talk at View Source Conference" loading="lazy">
   <figcaption>Saron Yitbarek speaking at View Source Conference</figcaption>
 </figure>
 

@@ -9,7 +9,7 @@
 
   figcaption {
     padding-top: 4px;
-    color: $muted-colour;
+    color: var(--muted-colour); 
     font-style: italic;
   }
 }

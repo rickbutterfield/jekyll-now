@@ -1,15 +1,24 @@
 a {
   color: var(--text);
-  border-bottom: 2px solid var(--brand);
-  text-decoration: none;
-  transition: border-bottom-width $transition-default;
+  // border-bottom: 2px solid var(--brand);
+  text-decoration: underline;
+  text-decoration-color: var(--brand);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: text-decoration-thickness $transition-default;
 
   &:hover {
-    border-bottom-width: 4px;
+    color: var(--muted-colour);
+    text-decoration-thickness: 2px;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--brand);
+    }
   }
 
   &:focus {
     outline: 2px solid var(--brand);
+    text-decoration: none;
   }
 }
 
@@ -73,7 +82,7 @@ b, strong {
 }
 
 .text-muted {
-  color: $muted-colour;
+  color: var(--muted-colour);
 }
 
 .text-uppercase {
