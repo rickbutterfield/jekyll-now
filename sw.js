@@ -1,4 +1,8 @@
-const version = 'v2.0.1';
+---
+layout: null
+---
+
+const version = "v{{'now' | date: '%s' }}";
 
 const offlineFundamentals = [
   'index.html',
