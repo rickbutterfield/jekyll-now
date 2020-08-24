@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: $max-width;
+  max-width: var(--max-width);
   padding: 1rem;
   width: 100%;
 }
