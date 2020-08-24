@@ -1,5 +1,5 @@
 ---
-layout: null
+  layout: null
 ---
 
 const version = "v{{'now' | date: '%s' }}";
@@ -7,11 +7,14 @@ const version = "v{{'now' | date: '%s' }}";
 const offlineFundamentals = [
   'index.html',
   'blog.html',
+  'offline.html',
   'style.css',
   'site.js',
   '/images/Rick.webp',
   '/images/Rick.jpg'
 ];
+
+const offlinePage = '/offline.html'
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
@@ -30,6 +33,8 @@ self.addEventListener("fetch", function (event) {
   let requestUrl = event.request.url;
   let isGetRequest = event.request.method === 'GET';
   let isWhitelistedUrl =
+    requestUrl.startsWith('http://127.0.0.1') ||
+    requestUrl.startsWith('http://localhost') ||
     requestUrl.startsWith('https://rickbutterfield.com') ||
     requestUrl.startsWith('https://use.typekit.net') ||
     requestUrl.startsWith('https://cdnjs.cloudflare.com');
@@ -46,6 +51,8 @@ self.addEventListener("fetch", function (event) {
 
           caches.open(version).then(cache => cache.put(event.request, cacheCopy));
           return response;
+        }).catch(error => {
+          return caches.match(offlinePage);
         });
       }
 
