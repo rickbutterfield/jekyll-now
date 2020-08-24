@@ -19,9 +19,12 @@
   <link rel="dns-prefetch" href="//use.typekit.net">
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 
+  {% capture styles %}
+  {% include style.scss %}
+  {% endcapture %}
+  <style>{{ styles | scssify }}</style>
   <link rel="stylesheet" href="//use.typekit.net/onb7sko.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" media="print" onload="this.media='all'; this.onload = null;">
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml">
 
 </head>
@@ -80,8 +83,8 @@
 
   {% include analytics.html %}
 
-  <script src="{{ site.baseurl }}/site.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js" async defer></script>
+  <script src="{{ site.baseurl }}/site.js" async defer></script>
 </body>
 
 </html>

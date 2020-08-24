@@ -8,7 +8,6 @@ const offlineFundamentals = [
   'index.html',
   'blog.html',
   'offline.html',
-  'style.css',
   'site.js',
   '/images/Rick.webp',
   '/images/Rick.jpg'
