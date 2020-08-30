@@ -9,7 +9,7 @@ excerpt: Umbraco has introduced three major new features with Umbraco 8. Let's d
 The main thing for me was to keep the blog URLs as there were nearly 300 posts that had built up over 6 or 7 years, all following the structure `/blog/YEAR/MONTH/post-name`. At first, I opted to use a combination of built in property  `umbracoUrlAlias` along with the `ContentSaving` event, so that a slug would be auto generated based on the date the blog was published.
 
 ```csharp
-public class PublishEventComponent : IComponent
+public class PublishEventComponent : IComponent 
 {
     public void Initialize()
     {
