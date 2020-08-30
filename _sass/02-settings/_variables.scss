@@ -24,19 +24,35 @@ $transition-default: 100ms ease;
   --code-text: #212121;
   --code-background: #f5f2f0;
 
-  [data-dark-mode="false"] {
+  @media (prefers-color-scheme: light) {
     --background: #fafafa;
     --text: #212121;
     --brand: #fbe26d;    
     --border: #e5e5e5;
     --muted-colour: #{$muted-colour};
+
+    [data-dark-mode="true"] {
+      --background: #1f2123;
+      --text: #fafafa;
+      --brand: #fbe26d;
+      --border: #636363;
+      --muted-colour: #bcb7ad;
+    }
   }
 
-  [data-dark-mode="true"] {
+  @media (prefers-color-scheme: dark) {
     --background: #1f2123;
     --text: #fafafa;
     --brand: #fbe26d;
     --border: #636363;
     --muted-colour: #bcb7ad;
+    
+    [data-dark-mode="false"] {
+      --background: #fafafa;
+      --text: #212121;
+      --brand: #fbe26d;    
+      --border: #e5e5e5;
+      --muted-colour: #{$muted-colour};
+    }
   }
 }
