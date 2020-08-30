@@ -14,7 +14,7 @@ The error I was getting looked something like this:
 
 After some digging and Googling I came across a number of ways to remove emojis from a string which seems to have done the trick. The example in my case was trying to load tweets and spit them out as JSON.
 
-```dotnet
+```csharp
 var description = Regex.Replace(tweet.TextAsHtml, @"\p{Cs}", "");
 ```
 

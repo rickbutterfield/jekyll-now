@@ -120,3 +120,8 @@ blockquote {
     color: $muted-colour;
   }
 }
+
+pre {
+  margin-left: -1rem !important;
+  margin-right: -1rem !important;
+}
