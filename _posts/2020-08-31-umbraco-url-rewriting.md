@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  URL rewriting in Umbraco 8
-excerpt: Umbraco has introduced three major new features with Umbraco 8. Let's dig into some of those new features here.
+excerpt: I recently migrated a website from WordPress to Umbraco and was keen to keep some of the great SEO work driving traffic into the site.
 ---
 
-<p class="lead">I recently migrated the a website from WordPress to Umbraco and was keen to keep some of the great SEO work driving traffic into the site.</p>
+<p class="lead">I recently migrated a website from WordPress to Umbraco and was keen to keep some of the great SEO work driving traffic into the site.</p>
 
 The main thing for me was to keep the blog URLs as there were nearly 300 posts that had built up over 6 or 7 years, all following the structure `/blog/YEAR/MONTH/post-name`. At first, I opted to use a combination of built in property  `umbracoUrlAlias` along with the `ContentSaving` event, so that a slug would be auto generated based on the date the blog was published.
 
