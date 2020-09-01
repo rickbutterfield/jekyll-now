@@ -41,6 +41,22 @@ window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
 
 function setModeOptions() {
   document.body.dataset.darkMode = isDarkMode;
+
+  let prismScripts = document.querySelectorAll('link[rel="stylesheet"][data-dark-mode]');
+  prismScripts.forEach(script => {
+    let darkModeValue = JSON.parse(script.getAttribute('data-dark-mode'));
+    if (darkModeValue === isDarkMode) {
+      if (isDarkMode) {
+        script.setAttribute('media', 'screen');
+      }
+      else {
+        script.setAttribute('media', 'screen');
+      }
+    }
+    else {
+      script.setAttribute('media', 'none');
+    }
+  });
 }
 setModeOptions();
 
