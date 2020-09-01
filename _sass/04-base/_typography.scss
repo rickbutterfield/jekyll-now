@@ -12,7 +12,7 @@ a {
     color: var(--muted-colour);
     text-decoration-thickness: 2px;
 
-    @media (prefers-color-scheme: dark) {
+    [data-dark-mode="true"] & {
       color: var(--brand);
     }
   }
