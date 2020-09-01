@@ -12,9 +12,21 @@ if ('serviceWorker' in navigator) {
 document.body.classList.remove('no-js');
 
 let isDarkMode = false;
+const darkModeCookie = Cookies.get('rb-dark-mode');
 
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  isDarkMode = true;
+function setDarkModeCookie() {
+  Cookies.set('rb-dark-mode', isDarkMode, { expires: 30, path: '/' });
+}
+
+if (darkModeCookie != null) {
+  isDarkMode = JSON.parse(darkModeCookie);
+}
+
+else {
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    isDarkMode = true;
+    setDarkModeCookie();
+  }
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
@@ -24,6 +36,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
     isDarkMode = false;
   }
   setModeOptions();
+  setDarkModeCookie();
 });
 
 function setModeOptions() {
@@ -36,6 +49,7 @@ function toggleMode(e) {
   let darkModeCheck = document.body.dataset.darkMode;
   isDarkMode = !JSON.parse(darkModeCheck);
   setModeOptions();
+  setDarkModeCookie();
 };
 
 const modeToggle = document.querySelector('.js-mode-toggle');

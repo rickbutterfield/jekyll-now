@@ -55,4 +55,13 @@ body {
   max-width: var(--max-width);
   padding: 1rem;
   width: 100%;
+
+  article {
+    pre {
+      @media (min-width: 70em) {
+        margin-left: -15vw !important;
+        margin-right: -15vw !important;
+      }
+    }
+  }
 }
