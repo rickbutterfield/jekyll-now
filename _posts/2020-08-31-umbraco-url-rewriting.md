@@ -228,5 +228,8 @@ public class ContentFinderComposer : IUserComposer
 
 And voila! Your page will be published with a custom URL, with no intervention needed by your content editors.
 
+## Update
+As [Stefan Kip kindly pointed out on Twitter](https://twitter.com/kipusoep/status/1300750077724626944), if you do wish to use `umbracoUrlAlias` and let your content editors control the generated URL a bit more, you can [use this `AliasUrlProvider`](https://gist.github.com/stefankip/e00d50a5c4711a29269c88049fc1976b).
+
 ### Further reading
 - [Modify Umbraco URLs with the UrlProvider and ContentFinder - 24days](https://24days.in/umbraco-cms/2014/urlprovider-and-contentfinder/)
