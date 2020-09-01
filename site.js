@@ -18,7 +18,7 @@ function setDarkModeCookie() {
   Cookies.set('rb-dark-mode', isDarkMode, { expires: 30, path: '/' });
 }
 
-if (darkModeCookie != null) {
+if (typeof darkModeCookie != "undefined") {
   isDarkMode = JSON.parse(darkModeCookie);
 }
 

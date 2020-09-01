@@ -32,9 +32,9 @@
 
       &:hover,
       &:focus {
-        @media (prefers-color-scheme: dark) {
-          color: var(--background);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   color: var(--background);
+        // }
 
         &:after {
           top: 0;
