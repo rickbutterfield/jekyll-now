@@ -28,7 +28,21 @@ img, video {
 .iframe {
   position: relative;
   height: 0;
-  padding-bottom: 56.25%;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding-bottom: calc(56.25% + 1rem);
+  
+  @media (min-width: 50em) {
+    margin-right: -2rem;
+    margin-left: -2rem;
+    padding-bottom: calc(56.25% + 2rem);
+  }
+
+  @media (min-width: 70em) {
+    margin-right: -5rem;
+    margin-left: -5rem;
+    padding-bottom: calc(56.25% + 5rem);
+  }
 }
 
 iframe {

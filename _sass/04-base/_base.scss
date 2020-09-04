@@ -56,11 +56,23 @@ body {
   padding: 1rem;
   width: 100%;
 
+  @media (min-width: 50em) {
+    padding: 1rem 2rem;
+  }
+
   article {
     pre {
+      margin-right: -1rem !important;
+      margin-left: -1rem !important;
+
+      @media (min-width: 50em) {
+        margin-right: -2rem !important;
+        margin-left: -2rem !important;
+      }
+
       @media (min-width: 70em) {
-        margin-left: -15vw !important;
-        margin-right: -15vw !important;
+        margin-right: -5rem !important;
+        margin-left: -5rem !important;
       }
     }
   }
