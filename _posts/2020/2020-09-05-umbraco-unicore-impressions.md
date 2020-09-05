@@ -76,7 +76,7 @@ At the moment, there is no front end to the site so you're restricted mostly to 
 
 There are going to be more alphas released in the coming months to keep testing, and then a stable beta once views are accessible and can be worked on.
 
-umbraCoffee also did a great video deep dive into this as well (in which they also kindly mentioned my [previous blog post!](/blog/umbraco-url-rewriting))
+[umbraCoffee](https://www.youtube.com/channel/UCF_Ene5-58a3Z55aw8O6Djg) also did a great video deep dive into this as well (in which they also kindly mentioned my [previous blog post!](/blog/umbraco-url-rewriting))
 
 <div class="iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-ceCJZ9Tus0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
