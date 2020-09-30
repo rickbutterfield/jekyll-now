@@ -14,7 +14,7 @@ excerpt: On Thursday 3rd September, Umbraco HQ announced the first alpha of Unic
 Unicore is Umbraco's project to get the CMS running on .NET Core. As mentioned in the live stream, the first commits happened in November last year, and they reckon they're about half way through the project as a whole.
 
 ## Why .NET Core?
-You might be thinking "what the heck is this .NET Core thing I keep hearing about?!" Core is the future of .NET as a whole. Framework&mdash;with a capital F; and what you might traditionally think of as "normal" .NET&mdash;will no longer be worked on and will go into support around November when Core v5 is shipped. As soon as this happens, Core will become the de-facto standard of .NET, and everything will be renamed to simply... wait for it... .NET v5!
+You might be thinking "what the heck is this .NET Core thing I keep hearing about?!" Core is the future of .NET as a whole. Framework&mdash;with a capital F; and what you might traditionally think of as "normal" .NET&mdash;will no longer be worked on and will go into support around November when Core v5 is shipped. As soon as this happens, [Core will become the de-facto standard of .NET](https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/?WT.mc_id=DOP-MVP-4025064), and everything will be renamed to simply... wait for it... .NET v5!
 
 The main draw of Core being the future of the framework is that it works in many more places. Traditionally if you wanted to write in the C# language you were restricted to only working on Microsoft technologies. Now you'll be able to work on macOS, Linux and much more!
 

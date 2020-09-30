@@ -15,7 +15,7 @@ let isDarkMode = false;
 const darkModeCookie = Cookies.get('rb-dark-mode');
 
 function setDarkModeCookie() {
-  Cookies.set('rb-dark-mode', isDarkMode, { expires: 30, path: '/' });
+  Cookies.set('rb-dark-mode', isDarkMode);
 }
 
 if (typeof darkModeCookie != "undefined") {
