@@ -7,11 +7,20 @@ layout: default
   <!-- {% if page.subtitle %}
   <h2>{{ page.subtitle }}</h2>
   {% endif %} -->
-  <p class="date text-muted text-uppercase">
-    <time datetime="{{page.date}}">
-      {{ page.date | date: "%B %e, %Y" }}
-    </time>
-  </p>
+  <ul class="date text-muted text-uppercase">
+    <li>
+      <time datetime="{{page.date}}">
+        {{ page.date | date: "%B %e, %Y" }}
+      </time>
+    </li>
+    <li role="presentation">|</li>
+    <li>
+        {% capture words %}
+        {{ content | number_of_words | minus: 180 }}
+        {% endcapture %}
+        {{ words | plus: 150 | divided_by: 150 | append: ' minutes to read' }}
+    </li>
+  </ul>
 
   {{ content }}
 
