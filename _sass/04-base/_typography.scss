@@ -1,16 +1,16 @@
 a {
   color: var(--text);
-  // border-bottom: 2px solid var(--brand);
+  font-weight: 500;
   text-decoration: underline;
   text-decoration-skip: ink;
   text-decoration-color: var(--brand);
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   transition: text-decoration-thickness $transition-default;
-
+  
   &:hover {
     color: var(--muted-colour);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
 
     [data-dark-mode="true"] & {
       color: var(--brand);
@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
   line-height: 1.25;
+
+  a {
+    font-weight: 700;
+  }
 
   p + &,
   pre + & {
