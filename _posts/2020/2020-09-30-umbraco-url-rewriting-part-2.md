@@ -15,6 +15,13 @@ I posted it online and it was fairly well received! On the [Umbraco Web Develope
 
 ...and that's exactly what I decided to do! I knew a little bit about virtual nodes in Umbraco, so the [routing documentation](https://our.umbraco.com/documentation/reference/routing/) was my first port of call. This took a bit of trial and error to figure out what needed to happen in what order, so we're working from the ground up here rather than diving straight into routing first.
 
+## Table of Contents
+{:.no_toc}
+1. The generated Toc will be an ordered list
+{:toc}
+
+<hr/>
+
 ## Virtual Pages
 Firsly, we create a `BlogsVirtualPage.cs` file! It inherits from `PublishedContentWrapped` and is in effect a custom version of an `IPublishedContent` model. We're going to pass year and month values into this in a little bit and generate the correct URLs for routing.
 
@@ -260,5 +267,5 @@ And that should be it! You should have working month and year blog pages. The sa
 
 <hr/>
 
-### Further reading
+## Further reading
 - [How to create a virtual node in Umbraco](https://stackoverflow.com/a/35698197)
