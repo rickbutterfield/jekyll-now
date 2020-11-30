@@ -46,28 +46,28 @@ dotnet run
 Once this is done, we're up and running! The console currently doesn't tell you anything is running&mdash;as mentioned in the blog post&mdash;so we can just go to `http://localhost:5000`. Here's what we get!
 
 <figure class="c-figure">
-  <img src="/images/blog/2020-09-04/photo1.png" alt="The Umbraco vNext installer screen running on macOS">
+  <img src="/images/blog/2020-09-04/photo1.png" alt="The Umbraco vNext installer screen running on macOS" loading="lazy">
   <figcaption>The Umbraco vNext installer screen running on macOS</figcaption>
 </figure>
 
 As with every Umbraco installation, you go through and enter your details and SQL server details. Once installed, you'll need to type `dotnet run` again into your terminal. This is a known issue listed on the announcement blog post. Refresh your browser and you'll be able to see the login screen, and then we're inside Umbraco!
 
 <figure class="c-figure">
-  <img src="/images/blog/2020-09-04/photo2.png" alt="The Umbraco vNext dashboard screen running on macOS">
+  <img src="/images/blog/2020-09-04/photo2.png" alt="The Umbraco vNext dashboard screen running on macOS" loading="lazy">
   <figcaption>The Umbraco vNext dashboard screen running on macOS!</figcaption>
 </figure>
 
 Now we can have a look around the backoffice. At a glance, everything seems QUICK. I'm so impressed that this is Umbraco running natively on macOS! I tried creating a few doctypes, and also importing some from an 8.6 site that's in production, and everything appears to work as intended.
 
 <figure class="c-figure">
-  <img src="/images/blog/2020-09-04/photo3.png" alt="Saving a doctype in Umbraco vNext">
+  <img src="/images/blog/2020-09-04/photo3.png" alt="Saving a doctype in Umbraco vNext" loading="lazy">
   <figcaption>Saving a doctype in Umbraco vNext</figcaption>
 </figure>
 
 At the moment, there is no front end to the site so you're restricted mostly to what can be done in the backoffice, and I'm incredibly excited for this future for Umbraco! As HQ said on the live stream, they need people to be able to go to the edges of Umbraco and try everything; all possible edge cases and functionality.
 
 <figure class="c-figure">
-  <img src="/images/blog/2020-09-04/photo4.png" alt="The content tree in Umbraco vNext">
+  <img src="/images/blog/2020-09-04/photo4.png" alt="The content tree in Umbraco vNext" loading="lazy">
   <figcaption>The content tree in Umbraco vNext</figcaption>
 </figure>
 

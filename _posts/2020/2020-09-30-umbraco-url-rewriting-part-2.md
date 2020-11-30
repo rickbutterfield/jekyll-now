@@ -9,7 +9,7 @@ excerpt: A few weeks ago, I posted a blog about using IUrlProvider in Umbraco 8 
 I posted it online and it was fairly well received! On the [Umbraco Web Developers](https://www.facebook.com/groups/202933450108554/permalink/1114634335605123) group on Facebook, Aaron Sadler added a great thought...
 
 <figure class="c-figure">
-  <img src="/images/blog/2020-09-07/photo1.png" alt="Aaron Sadler on Facebook writing 'An idea to expand on this, would be to return all reliant pages in the year / month slug'">
+  <img src="/images/blog/2020-09-07/photo1.png" alt="Aaron Sadler on Facebook writing 'An idea to expand on this, would be to return all reliant pages in the year / month slug'" loading="lazy">
   <figcaption>Aaron Sadler on Facebook writing 'An idea to expand on this, would be to return all reliant pages in the year / month slug'</figcaption>
 </figure>
 
