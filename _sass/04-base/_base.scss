@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  padding-bottom: env(safe-area-inset-bottom);
   font-size: 1rem;
   font-family: $font-stack;
   font-display: swap;
@@ -53,7 +54,10 @@ body {
   flex-direction: column;
   margin: 0 auto;
   max-width: var(--max-width);
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: calc(env(safe-area-inset-right) + 1rem);
+  padding-bottom: 1rem;
+  padding-left: calc(env(safe-area-inset-left) + 1rem);
   width: 100%;
 
   @media (min-width: 50em) {
