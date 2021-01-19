@@ -51,11 +51,25 @@
   }
 
   .c-nav {
+    display: flex;
+    justify-content: center;
+
     a {
-      display: inline-block;
+      display: inline-flex;
       text-decoration: none;
       padding: .5rem;
       border-bottom: 0;
+
+      svg {
+        width: 20px;
+        height: auto;
+      }
+    }
+
+    &-item {
+      &--feed {
+
+      }
     }
   }
 

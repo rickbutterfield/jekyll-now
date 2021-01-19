@@ -47,13 +47,17 @@ h4, h5, h6,
   font-weight: 600;
 }
 
+h1 {
+  font-size: clampBuilder(375, 800, 28, 32);
+}
+
+h2 {
+  font-size: clampBuilder(375, 800, 20, 24);
+}
+
 p,
 li {
-  font-size: rem(18);
-
-  @media (min-width: 50em) {
-      font-size: rem(20);
-    }
+  font-size: clampBuilder(375, 800, 18, 20);
 }
 
 p {
@@ -61,7 +65,7 @@ p {
     padding: 2px 4px;
     background-color: var(--code-background);
     // text-shadow: 0 1px #fff;
-    font-size: 17px;
+    font-size: clampBuilder(375, 800, 16, 18);
     color: var(--code-text);
     font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
     text-align: left;
@@ -82,12 +86,16 @@ p {
 }
 
 .lead {
-  font-size: rem(22);
+  font-size: clampBuilder(375, 800, 22, 24);
   font-weight: 500;
 
   code {
-    font-size: 20px;
+    font-size: clampBuilder(375, 800, 20, 22);
   }
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  font-size: clampBuilder(375, 800, 14, 18);
 }
 
 b, strong {

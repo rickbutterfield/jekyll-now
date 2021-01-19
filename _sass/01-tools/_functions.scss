@@ -40,3 +40,21 @@
   $value: ($spacing / 1000) * 1em;
   @return $value;
 }
+
+
+@function clampBuilder( $minWidthPx, $maxWidthPx, $minFontSize, $maxFontSize ) {
+  $pixelsPerRem: 16;
+  
+  $minFontSize: $minFontSize / 16;
+  $maxFontSize: $maxFontSize / 16;
+
+  $minWidth: $minWidthPx / $pixelsPerRem;
+  $maxWidth: $maxWidthPx / $pixelsPerRem;
+
+  $slope: ( $maxFontSize - $minFontSize ) / ( $maxWidth - $minWidth );
+  $yAxisIntersection: (-$minWidth * $slope) + $minFontSize;
+
+  $value: clamp( #{$minFontSize}rem, #{$yAxisIntersection}rem + #{ $slope * 100 }vw, #{ $maxFontSize }rem );
+
+  @return $value;
+}
