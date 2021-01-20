@@ -78,6 +78,16 @@ body {
         margin-right: -5rem !important;
         margin-left: -5rem !important;
       }
+
+      @media (min-width: 70em) {
+        margin-right: -5rem !important;
+        margin-left: -5rem !important;
+      }
+
+      @media (min-width: 90em) {
+        margin-right: -10rem !important;
+        margin-left: -10rem !important;
+      }
     }
 
    .date {
