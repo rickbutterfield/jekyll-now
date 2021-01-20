@@ -11,6 +11,11 @@
     margin-right: -5rem;
     margin-left: -5rem;
   }
+
+  @media (min-width: 90em) {
+    margin-right: -10rem !important;
+    margin-left: -10rem !important;
+  }
   
   img {
     border-radius: 4px;
