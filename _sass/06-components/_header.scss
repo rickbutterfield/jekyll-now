@@ -56,13 +56,14 @@
 
     a {
       display: inline-flex;
+      align-items: center;
       text-decoration: none;
       padding: .5rem;
       border-bottom: 0;
 
       svg {
         width: 20px;
-        height: auto;
+        height: 20px;
       }
     }
 
