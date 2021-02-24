@@ -6,6 +6,13 @@ excerpt: I recently migrated a website from WordPress to Umbraco and was keen to
 
 <p class="lead">I recently migrated a website from WordPress to Umbraco and was keen to keep some of the great SEO work driving traffic into the site.</p>
 
+## Table of Contents
+{:.no_toc}
+1. The generated Toc will be an ordered list
+{:toc}
+
+## My first (not-quite-right) attempt...
+
 The main thing for me was to keep the blog URLs as there were nearly 300 posts that had built up over 6 or 7 years, all following the structure `/blog/YEAR/MONTH/post-name`. At first, I opted to use a combination of built in property  `umbracoUrlAlias` along with the `ContentSaving` event, so that a slug would be auto generated based on the date the blog was published.
 
 ```csharp
@@ -71,6 +78,8 @@ public class PublishEventComponent : IComponent
 ```
 
 This worked as a temporary effort, but trying to link to these pages from the Umbraco backoffice ended up being tricky as the custom slug was never used, without specifically using `umbracoUrlAlias` instead of `Url()`.
+
+## The actual solution!
 
 After searching and having a look around the Umbraco documentation I ended up finding the page on Umbraco's [outbound request pipeline](https://our.umbraco.com/documentation/reference/routing/Request-Pipeline/outbound-pipeline#custom-url-provider) which shows an example of writing a custom URL for a doctype.
 
@@ -228,8 +237,12 @@ public class ContentFinderComposer : IUserComposer
 
 And voila! Your page will be published with a custom URL, with no intervention needed by your content editors.
 
-## Update
+## Further reading
+- [Modify Umbraco URLs with the UrlProvider and ContentFinder - 24days](https://24days.in/umbraco-cms/2014/urlprovider-and-contentfinder/)
+
+## Updates
+### Update 1
 As [Stefan Kip kindly pointed out on Twitter](https://twitter.com/kipusoep/status/1300750077724626944), if you do wish to use `umbracoUrlAlias` and let your content editors control the generated URL a bit more, you can [use this `AliasUrlProvider`](https://gist.github.com/stefankip/e00d50a5c4711a29269c88049fc1976b).
 
-### Further reading
-- [Modify Umbraco URLs with the UrlProvider and ContentFinder - 24days](https://24days.in/umbraco-cms/2014/urlprovider-and-contentfinder/)
+### Update 2
+Check out [part 2 of this blog series](/blog/umbraco-url-rewriting-part-2)!
