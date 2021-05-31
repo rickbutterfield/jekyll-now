@@ -55,9 +55,10 @@ self.addEventListener("fetch", function (event) {
       caches.match(event.request).then(response => {
         function fetchAndCache() {
           return fetch(event.request).then(response => {
-            let cacheCopy = response.clone();
-
-            caches.open(version).then(cache => cache.put(event.request, cacheCopy));
+            if (response.headers.get('Content-Length') !== '0') {
+              let cacheCopy = response.clone();
+              caches.open(version).then(cache => cache.put(event.request, cacheCopy));
+            }
             return response;
           }).catch(error => {
             return caches.match(offlinePage);
